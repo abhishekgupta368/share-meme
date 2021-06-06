@@ -96,7 +96,6 @@ public class UserService {
         imageModel.setUploaded(Instant.now());
         imageModel.setModified(Instant.now());
         Image image = imageRepository.save(imageModel);
-
         imageList.add(image);
         user.setImages(imageList);
 
